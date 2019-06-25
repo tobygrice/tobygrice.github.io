@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Startfresh - Bookmarks</title>
+  <link rel="stylesheet" href="style_bookmarks.css">
+  <script language="JavaScript">
+    function addSub() {
+      sub = document.createElement("input");
+      sub.setAttribute("type", "text");
+      sub.setAttribute("placeholder", "Enter the name of the bookmark and it's URL, separated by a /");
+      sub.setAttribute("id", id);
+      sub.setAttribute("autocomplete", "off");
+    }
+
+    function saveTextAsFile(textToSave) {
+      var textToSave, textToSaveAsBlob, textToSaveAsURL, fileNameToSaveAs, downloadLink;
+      textToSaveAsBlob = new Blob([textToSave], {type:"text/plain"});
+      textToSaveAsURL = window.URL.createObjectURL(textToSaveAsBlob);
+      fileNameToSaveAs = "startfresh_bookmarks";
+
+      downloadLink = document.createElement("a");
+      downloadLink.download = "startfresh_bookmarks";
+      downloadLink.innerHTML = "Download Backup";
+      downloadLink.href = textToSaveAsURL;
+      downloadLink.onclick = destroyClickedElement;
+      downloadLink.style.display = "none";
+      document.body.appendChild(downloadLink);
+
+      downloadLink.click();
+    }
+
+    function destroyClickedElement(event) {
+       document.body.removeChild(event.target);
+    }
+
+    function loadFileAsText() {
+       var fileToLoad = document.getElementById("fileToLoad").files[0];
+
+       var fileReader = new FileReader();
+       fileReader.onload = function(fileLoadedEvent) {
+           var textFromFileLoaded = fileLoadedEvent.target.result;
+           document.getElementById("inputTextToSave").value = textFromFileLoaded;
+       };
+       fileReader.readAsText(fileToLoad, "UTF-8");
+    };
+  </script>
+</head>
+
+<body>
+  <p>Category 1:</p><br><input id="cat1_head"></input><br>
+  &emsp;<p>Sub 1:</p><br>
+  &emsp;<input id="cat1_sub1"></input>
+</body>
+</html>

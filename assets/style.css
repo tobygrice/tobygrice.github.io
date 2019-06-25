@@ -1,0 +1,429 @@
+@font-face{
+    font-family: Product Sans;
+    src: local("Product Sans"), url("Product Sans.woff") format("woff");
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+background {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+html, body {
+    overflow-x: hidden;
+    height: 100%;
+}
+
+#time {
+  font-family: Product Sans;
+  font-size: 100px;
+  width: 100%;
+  top: 31.5%;
+  position: absolute;
+  text-align: center;
+  color: white;
+}
+
+#date {
+  font-family: Product Sans;
+  font-size: 25px;
+  width: 100%;
+  top: calc(31.5% + 107px);
+  position: absolute;
+  text-align: center;
+  color: white;
+}
+
+#greeting {
+  font-family: Product Sans;
+  color: black;
+  font-size: 19px;
+  width: 100%;
+  top: calc(31.5% + 138px);
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+.searchbox {
+  top: calc(31.5% + 204px);
+  position: absolute;
+  width: 494px;
+  box-sizing: border-box;
+  border: 3px solid #7a7a7a;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  font-size: 20px;
+  font-family: Product Sans;
+  border-radius: 10px;
+  background-color: white;
+  background-image: url('images/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding-left: 45px;
+  padding-top: 11px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.searchbox:focus {
+  border: 3px solid #444444;
+}
+
+.thumbnails {
+  width: 100%;
+  left: 0%;
+  text-align: center;
+  top: calc(31.5% + 260px);
+  position: absolute;
+}
+
+.keystone {
+  width: 93px;
+  position: absolute;
+  box-sizing: border-box;
+  border: 4px solid #053566;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  border-radius: 9px;
+}
+.keystone:hover {
+  border: 5px solid #404244;
+  transform: scale(1.1,1.1);
+}
+
+.youtube {
+  width: 93px;
+  position: absolute;
+  box-sizing: border-box;
+  border: 4px solid #962521;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  border-radius: 9px;
+}
+.youtube:hover {
+  border: 5px solid #404244;
+  transform: scale(1.1,1.1);
+}
+
+.mytasks {
+  width: 93px;
+  position: absolute;
+  box-sizing: border-box;
+  border: 4px solid #214bb7;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  border-radius: 9px;
+}
+.mytasks:hover {
+  border: 5px solid #404244;
+  transform: scale(1.1,1.1);
+}
+
+.keep {
+  width: 93px;
+  position: absolute;
+  box-sizing: border-box;
+  border: 4px solid #bc8a00;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  border-radius: 9px;
+}
+.keep:hover {
+  border: 5px solid #404244;
+  transform: scale(1.1,1.1);
+}
+
+.netflix {
+  width: 93px;
+  position: absolute;
+  box-sizing: border-box;
+  border: 4px solid #282828;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  border-radius: 9px;
+}
+.netflix:hover {
+  border: 5px solid #404244;
+  transform: scale(1.1,1.1);
+}
+
+.spotify {
+  width: 93px;
+  position: absolute;
+  box-sizing: border-box;
+  border: 4px solid #129641;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  border-radius: 9px;
+}
+.spotify:hover {
+  border: 5px solid #404244;
+  transform: scale(1.1,1.1);
+}
+
+.gmail {
+  width: 93px;
+  position: absolute;
+  box-sizing: border-box;
+  border: 4px solid #99916f;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  border-radius: 9px;
+}
+.gmail:hover {
+  border: 5px solid #404244;
+  transform: scale(1.1,1.1);
+}
+
+.drive {
+  width: 93px;
+  position: absolute;
+  box-sizing: border-box;
+  border: 4px solid #bab087;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  border-radius: 9px;
+}
+.drive:hover {
+  border: 5px solid #404244;
+  transform: scale(1.1,1.1);
+}
+
+.icloud {
+  width: 93px;
+  position: absolute;
+  box-sizing: border-box;
+  border: 4px solid #8e8e8e;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  border-radius: 9px;
+}
+.icloud:hover {
+  border: 5px solid #404244;
+  transform: scale(1.1,1.1);
+}
+
+.button {
+    background-color: #4F4F4F;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    left: 10px;
+    top: calc(100% - 53px);
+    position: absolute;
+    -webkit-transition-duration: 0.3s;
+    transition: 0.3s;
+    z-index: 999;
+}
+.button:hover {
+    background-color: #303030;
+}
+
+.credit {
+  font-family: Product Sans;
+  font-size: 100%;
+  top: 96%;
+  left: 0px;
+  width: 100%;
+  position: absolute;
+  color: white;
+  text-align: right;
+  transition: 0.3s ease-in-out;
+  opacity: 0;
+}
+.credit:hover {
+  opacity: 1;
+}
+
+
+/* Side menu:
+.main {
+    margin: 0 auto;
+    display: block;
+    height: 100%;
+}
+.mainInner{
+    display: table;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+.mainInner div{
+    display:table-cell;
+    vertical-align: middle;
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 1.25px;
+}
+#sidebarMenu {
+    height: 100%;
+    top: 0%;
+    position: absolute;
+    left: 0;
+    width: 230px;
+    margin-top: 0;
+    transform: translateX(-250px);
+    transition: transform 250ms ease-in-out;
+    background: #232323;
+}
+.sidebarMenuInner{
+    margin:0;
+    padding-right:30px;
+    padding-top:30px;
+}
+
+.sidebarMenuInner li{
+    list-style: none;
+    color: #fff;
+    font-weight: bold;
+    padding-bottom: 20px;
+    cursor: pointer;
+    text-align: left;
+    font-family: Product Sans;
+    font-size: 22px;
+    line-height: 20px;
+
+}
+.sidebarMenuInner li span{
+    display: block;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.50);
+}
+.sidebarMenuInner li a{
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.sidebarMenuInner li a:hover{
+    color: lightgreen;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    -webkit-transition: 0.3s;
+}
+input[type="checkbox"]:checked ~ #sidebarMenu {
+    transform: translateX(0);
+}
+
+input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+}
+.sidebarIconToggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    top: 18px;
+    left: 18px;
+    height: 22px;
+    width: 22px;
+}
+
+.sidebarMenuInner li:hover .submenu {
+  display: block;
+  max-height: 215px;
+  height: inherit;
+  line-height: 4px;
+  font-size: 30px;
+  transition: all 0.4s ease;
+  left: -25px;
+  position: relative;
+}
+
+.submenu {
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.18s ease;
+  line-height: 4px;
+  left: -25px;
+  position: relative;
+}
+
+.spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #232323;
+}
+.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+.diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
+}
+.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    opacity: 0;
+    left: 230px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 8px;
+    left: 230px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top: -9px;
+    left: 230px;
+} */
